@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+
+:root{
+    --color-primary: hsl(0, 0%, 100%);
+    --color-secundary: hsl(212, 45%, 89%);
+    --color-tercero: hsl(220, 15%, 55%);
+    --color-cuarto: hsl(218, 44%, 22%);
+    --font-size-parrafo: 15px;
+}
+
+*{
+    font-family: "Outfit";
+}
+body{
+    background-color: var(--color-secundary);
+}
+
+.caja_ppal{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--color-primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 235px;
+    padding: 16px;
+    border-radius: 15px;
+}
+.caja_ppal img{
+    width: 235px;
+    border-radius: 15px;
+}
+.caja_ppal h3,
+p{
+    text-align: center;
+}
+
+.caja_ppal h3{
+    color: var(--color-cuarto);
+    font-weight: 700;
+}
+
+.caja_ppal p{
+    color: var(--color-tercero);
+    font-weight: 400;
+    font-size: var(--font-size-parrafo);
+    margin-top: -3px;
+}
+
+.caja_ppal h3:hover{
+    cursor: pointer;
+    color:  hsl(217, 85%, 55%);;
+}
